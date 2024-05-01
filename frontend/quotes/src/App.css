@@ -1,0 +1,127 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-container,
+.list-container {
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px 20px 20px 20px;
+}
+
+.quote-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px 35px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quote-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-item::before {
+  content: "•";
+  color: #007BFF; 
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
+  top: 18px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  list-style-type: none; 
+}
+
+.quote-text {
+  font-style: italic; 
+}
+
+.author-text {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.controls {
+  display: flex;
+  margin-top: 10px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-form{
+  width: 100%;
+}
